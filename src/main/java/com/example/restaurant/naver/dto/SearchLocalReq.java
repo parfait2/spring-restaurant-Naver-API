@@ -19,8 +19,8 @@ public class SearchLocalReq {
         var map = new LinkedMultiValueMap<String, String>();
 
         map.add("query", query);
-        map.add("display", display);
-        map.add("start", start);
+        map.add("display", String.valueOf(display));
+        map.add("start", String.valueOf(start));
         map.add("sort", sort);
 
         return map;
