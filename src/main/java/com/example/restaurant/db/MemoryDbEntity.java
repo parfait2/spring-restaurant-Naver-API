@@ -8,5 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class MemoryDbEntity {
-    protected int index;
+    /*
+    * int -> Integer : database에 0이 들어갈 수 있기 때문이다.
+    * 바꿀 때는 지정 후 refactor -> type migration으로 변경한다.
+    * */
+    protected Integer index; // int -> Integer : database에 0이 들어갈 수 있기 때문이다.
 }
