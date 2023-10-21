@@ -50,7 +50,6 @@ public class NaverClient {
                 httpEntity,
                 responseType
         );
-
         return responseEntity.getBody();
     }
 
@@ -75,8 +74,6 @@ public class NaverClient {
                 httpEntity,
                 responseType
         );
-
         return responseEntity.getBody();
-
     }
 }
